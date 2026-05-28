@@ -22,6 +22,7 @@ func main() {
 	gokil()
 	gogo()
 	ifelse()
+	switching()
 }
 
 /*placeholder(verb)
