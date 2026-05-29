@@ -19,6 +19,28 @@ func switching() {
 		fmt.Println("telu")
 	}
 
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("sebelum 12 siang")
+	default :
+		fmt.Println("setelah 12 siang")
+	}
+
+	whatAmI := func(i interface{}) { // interface{} adalah tipe data kosong, bisa menampung semua tipe data
+		switch t := i.(type) {
+		case bool:
+			fmt.Println("ini boolean")
+		case int:
+			fmt.Println("ini integer")
+		default:
+			fmt.Printf("ini tipe data lain: %T\n", t)
+		}
+	}
+	whatAmI(true)
+	whatAmI(999)
+	whatAmI("jokowi jianncuk")
+
 }
 
 var hariIni = time.Now().Weekday()
