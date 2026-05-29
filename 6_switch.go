@@ -17,10 +17,16 @@ func switching() {
 	case 3:
 		fmt.Println("telu")
 	}
-	switch time.Now().Weekday() {
+
+}
+
+var hariIni = time.Now().Weekday()
+func switchinghariIni() {
+	fmt.Print(hariIni)
+	switch hariIni {
 	case time.Saturday, time.Sunday:
-		fmt.Println("ini weekend")
+		fmt.Println(" : ini weekend")
 	default:
-		fmt.Println("waktunya kerja")
+		fmt.Println(" : waktunya kerja")
 	}
 }

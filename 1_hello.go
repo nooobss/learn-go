@@ -23,6 +23,7 @@ func main() {
 	gogo()
 	ifelse()
 	switching()
+	switchinghariIni()
 }
 
 /*placeholder(verb)
