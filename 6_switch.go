@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"time"
 )
-
+// hanya deklarasi package dan import yang boleh di luar fungsi main() atau fungsi lainnya
+// menjalankan fungsi wajib didalam fungsi. Contoh fmt.Println() harus di dalam fungsi
 func switching() {
 	fmt.Println("-- 6_switch.go --")
-	i := 2
+	i := 2 // deklarasi := hanya di dalam fungsi, 
 	fmt.Print("write ", i, " as ")
 	switch i {
 	case 1:
@@ -30,3 +31,9 @@ func switchinghariIni() {
 		fmt.Println(" : waktunya kerja")
 	}
 }
+
+/*catatan
+time adalah package
+.Now() adalah fungsi atau pembuat objek yang ada di package time
+.Weekday() adalah method yang ada di objek yang dibuat oleh Now()
+*/
