@@ -24,6 +24,7 @@ func main() {
 	ifelse()
 	switching()
 	switchinghariIni()
+	doArray() //memanggil fungsi doArray() yang ada di file 7_array.go
 }
 
 /*placeholder(verb)
