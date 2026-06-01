@@ -25,6 +25,7 @@ func main() {
 	switching()
 	switchinghariIni()
 	doArray() //memanggil fungsi doArray() yang ada di file 7_array.go
+	potongan()
 }
 
 /*placeholder(verb)
@@ -32,7 +33,7 @@ integer :
 %d, %b, %x
 
 float :
-%f, %g, %.2f, 
+%f, %g, %.2f,
 
 string :
 %s, %q
