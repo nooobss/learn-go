@@ -1,47 +1,49 @@
 package main
 
 import (
-"fmt"
-// "slices"
+	"fmt"
+	"slices"
 )
 
-func potongan()  {
-  var slicer []string
-  fmt.Println("xyz", slicer, slicer==nil, len(slicer) == 0)
+func potongan() {
+	fmt.Println("jancok jokowi")
+	var slicer []string
+	fmt.Println("xyz", slicer, slicer == nil, len(slicer) == 0)
 
-  slicer = make([]string, 3)
-  fmt.Println("emp :", slicer, "len:", len(slicer), "cap:",cap(slicer))
+	slicer = make([]string, 3)
+	fmt.Println("emp :", slicer, "len:", len(slicer), "cap:", cap(slicer))
 
-  slicer[0] = "a"
-  slicer[1] = "b"
-  slicer[2] = "c"
-  fmt.Println("set :", slicer)
-  fmt.Println("get :", slicer[2])
-  fmt.Println("len:", len(slicer))
+	slicer[0] = "a"
+	slicer[1] = "b"
+	slicer[2] = "c"
+	fmt.Println("set :", slicer)
+	fmt.Println("get :", slicer[2])
+	fmt.Println("len:", len(slicer))
 
-  fmt.Println("len", len(slicer))
-  
-  slicer = append(slicer, "d")
-  slicer = append(slicer, "e", "f")
-  fmt.Println("appnd", slicer)
+	fmt.Println("len", len(slicer))
 
-c := make([]string, len(slicer))
-copy(c, slicer)
-fmt.Println("copy", "c")
+	slicer = append(slicer, "d")
+	slicer = append(slicer, "e", "f")
+	fmt.Println("appnd", slicer)
 
-l := slicer[2:4]
-fmt.Println("slicess", l)
+	c := make([]string, len(slicer))
+	copy(c, slicer)
+	fmt.Println("copy", "c")
 
-ll := slicer[:3]
-fmt.Println("slicesss", ll)
+	l := slicer[2:4]
+	fmt.Println("slicess", l)
 
-lll := slicer[2:]
-fmt.Println("acara belajar bhs inggris", lll)
+	ll := slicer[:3]
+	fmt.Println("slicesss", ll)
 
-t := []string{"g", "h", "i"}
-fmt.Println("dcl", t)
+	lll := slicer[2:]
+	fmt.Println("acara belajar bhs inggris", lll)
 
+	t := []string{"g", "h", "i"}
+	fmt.Println("dcl", t)
 
-
-
+	t2 := []string{"g", "h", "i"}
+	if slices.Equal(t, t2) {
+		fmt.Println("t == t2")
+	}
 }
